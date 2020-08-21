@@ -4,10 +4,15 @@
   "main": "Main.xaml",
   "dependencies": {
     "BalaReva.DataTable.Activities": "2.0.2",
+    "BalaReva.Excel.Activities": "2019.4.0",
+    "DataTablePlugins.Activities": "1.1.5",
     "UiPath.Excel.Activities": "[2.7.2]",
+    "UiPath.FTP.Activities": "1.0.7053.27728",
     "UiPath.Mail.Activities": "[1.7.2]",
+    "UiPath.Script.Activities": "1.0.6710.16240",
     "UiPath.System.Activities": "[19.10.1]",
-    "UiPath.UIAutomation.Activities": "[19.10.1]"
+    "UiPath.UIAutomation.Activities": "[19.10.1]",
+    "UiPathTeam.Excel.Extensions.Activities": "1.0.7107.42453"
   },
   "schemaVersion": "3.2",
   "studioVersion": "19.4.4.0",

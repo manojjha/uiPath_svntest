@@ -21,6 +21,22 @@
           "lib/DataTableGroup.Design.dll": {}
         }
       },
+      "BalaReva.Excel.Activities/2019.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Office.Interop.Excel": "15.0.4795.1000",
+          "MicrosoftOfficeCore": "15.0.0"
+        },
+        "compile": {
+          "lib/_._": {}
+        },
+        "runtime": {
+          "lib/BalaReva.Excel.Base.dll": {},
+          "lib/BalaReva.Excel.Design.dll": {},
+          "lib/BalaReva.Excel.dll": {},
+          "lib/BalaReva.Utilities.dll": {}
+        }
+      },
       "BouncyCastle/1.8.5": {
         "type": "package",
         "compile": {
@@ -49,6 +65,15 @@
         },
         "runtime": {
           "lib/net40-client/CsvHelper.dll": {}
+        }
+      },
+      "DataTablePlugins.Activities/1.1.5": {
+        "type": "package",
+        "compile": {
+          "lib/net461/_._": {}
+        },
+        "runtime": {
+          "lib/net461/DataTablePlugins.dll": {}
         }
       },
       "DocumentFormat.OpenXml/2.5.0": {
@@ -113,6 +138,27 @@
           }
         }
       },
+      "FluentFTP/19.1.2": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "System.Core",
+          "System.Data",
+          "System.Drawing",
+          "System.IO.Compression.FileSystem",
+          "System.Numerics",
+          "System.Runtime.Serialization",
+          "System.Web",
+          "System.Xml",
+          "System.Xml.Linq"
+        ],
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/FluentFTP.dll": {}
+        }
+      },
       "Humanizer.Core/2.4.2": {
         "type": "package",
         "compile": {
@@ -157,6 +203,15 @@
           "lib/40/Microsoft.Exchange.WebServices.dll": {}
         }
       },
+      "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
+        "type": "package",
+        "compile": {
+          "lib/net20/_._": {}
+        },
+        "runtime": {
+          "lib/net20/Microsoft.Office.Interop.Excel.dll": {}
+        }
+      },
       "Microsoft.Rest.ClientRuntime/2.3.20": {
         "type": "package",
         "dependencies": {
@@ -183,6 +238,15 @@
         },
         "runtime": {
           "lib/Microsoft.VisualStudio.OLE.Interop.dll": {}
+        }
+      },
+      "MicrosoftOfficeCore/15.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net35/_._": {}
+        },
+        "runtime": {
+          "lib/net35/Office.dll": {}
         }
       },
       "Newtonsoft.Json/11.0.2": {
@@ -216,6 +280,24 @@
         },
         "runtime": {
           "lib/net45/ICSharpCode.SharpZipLib.dll": {}
+        }
+      },
+      "SSH.NET/2016.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net40/_._": {}
+        },
+        "runtime": {
+          "lib/net40/Renci.SshNet.dll": {}
+        }
+      },
+      "System.Management.Automation/6.1.7601.17515": {
+        "type": "package",
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/System.Management.Automation.dll": {}
         }
       },
       "System.ValueTuple/4.5.0": {
@@ -363,6 +445,21 @@
           }
         }
       },
+      "UiPath.FTP.Activities/1.0.7053.27728": {
+        "type": "package",
+        "dependencies": {
+          "FluentFTP": "19.1.2",
+          "SSH.NET": "2016.1.0"
+        },
+        "compile": {
+          "lib/net452/_._": {}
+        },
+        "runtime": {
+          "lib/net452/UiPath.FTP.Activities.Design.dll": {},
+          "lib/net452/UiPath.FTP.Activities.dll": {},
+          "lib/net452/UiPath.FTP.dll": {}
+        }
+      },
       "UiPath.Mail.Activities/1.7.2": {
         "type": "package",
         "dependencies": {
@@ -490,6 +587,21 @@
         },
         "runtime": {
           "lib/net45/UiPath.OCR.Contracts.dll": {}
+        }
+      },
+      "UiPath.Script.Activities/1.0.6710.16240": {
+        "type": "package",
+        "dependencies": {
+          "System.Management.Automation": "6.1.7601.17515"
+        },
+        "compile": {
+          "lib/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/AutoHotkey.Interop.dll": {},
+          "lib/net45/UiPath.Script.Activities.Design.dll": {},
+          "lib/net45/UiPath.Script.Activities.dll": {},
+          "lib/net45/UiPath.Script.dll": {}
         }
       },
       "UiPath.System.Activities/19.10.1": {
@@ -833,6 +945,16 @@
           "lib/net452/UiPath.Vision.Core.dll": {},
           "lib/net452/UiPath.Vision.dll": {}
         }
+      },
+      "UiPathTeam.Excel.Extensions.Activities/1.0.7107.42453": {
+        "type": "package",
+        "compile": {
+          "lib/net451/_._": {}
+        },
+        "runtime": {
+          "lib/net451/Excel.Activites.Design.dll": {},
+          "lib/net451/Excel.Activities.dll": {}
+        }
       }
     }
   },
@@ -862,6 +984,20 @@
         "balareva.datatable.activities.nuspec",
         "lib/DataTableExtensions.Activities.dll",
         "lib/DataTableGroup.Design.dll"
+      ]
+    },
+    "BalaReva.Excel.Activities/2019.4.0": {
+      "sha512": "nwpn2AN7Q9XnQ/r8VOChiffSPOWIyWhnSMh7Lit+8kMkwu/ivYag1dNThobWOQrkP1OvY4eQf76vC10xQNCAKg==",
+      "type": "package",
+      "path": "balareva.excel.activities/2019.4.0",
+      "files": [
+        ".nupkg.metadata",
+        "balareva.excel.activities.2019.4.0.nupkg.sha512",
+        "balareva.excel.activities.nuspec",
+        "lib/BalaReva.Excel.Base.dll",
+        "lib/BalaReva.Excel.Design.dll",
+        "lib/BalaReva.Excel.dll",
+        "lib/BalaReva.Utilities.dll"
       ]
     },
     "BouncyCastle/1.8.5": {
@@ -916,6 +1052,17 @@
         "lib/portable-net40+sl5+win8+wpa+wp8/CsvHelper.xml"
       ]
     },
+    "DataTablePlugins.Activities/1.1.5": {
+      "sha512": "C3bd0om/XwXVIsh2+4Yk2N9S6RE5I99guD4r4YtzMrsPGQggWMKC8heLnsdzbrTHMXStruczE+ZK4oeZR3i18Q==",
+      "type": "package",
+      "path": "datatableplugins.activities/1.1.5",
+      "files": [
+        ".nupkg.metadata",
+        "datatableplugins.activities.1.1.5.nupkg.sha512",
+        "datatableplugins.activities.nuspec",
+        "lib/net461/DataTablePlugins.dll"
+      ]
+    },
     "DocumentFormat.OpenXml/2.5.0": {
       "sha512": "H5jnox0hcLwzAjrpNqDPIItjh7dplF1kk1z8LatpI2h75wBgps1MepEttJFKs7xedQReCMHA0tGpNI0H2B+Mrg==",
       "type": "package",
@@ -956,6 +1103,29 @@
         "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll",
         "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll",
         "tools/install.ps1"
+      ]
+    },
+    "FluentFTP/19.1.2": {
+      "sha512": "0xvKcao/sUbZQgD2PhXHejl9msxUzuU7cSpczDb2MnI1cUwp1ViS8FjkPjPE9C6UucLgII4nIpq8VYEvNyjgoQ==",
+      "type": "package",
+      "path": "fluentftp/19.1.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "fluentftp.19.1.2.nupkg.sha512",
+        "fluentftp.nuspec",
+        "lib/net20/FluentFTP.dll",
+        "lib/net20/FluentFTP.xml",
+        "lib/net35/FluentFTP.dll",
+        "lib/net35/FluentFTP.xml",
+        "lib/net40/FluentFTP.dll",
+        "lib/net40/FluentFTP.xml",
+        "lib/net45/FluentFTP.dll",
+        "lib/net45/FluentFTP.xml",
+        "lib/netstandard1.4/FluentFTP.dll",
+        "lib/netstandard1.4/FluentFTP.xml",
+        "lib/netstandard1.6/FluentFTP.dll",
+        "lib/netstandard1.6/FluentFTP.xml"
       ]
     },
     "Humanizer.Core/2.4.2": {
@@ -1027,6 +1197,18 @@
         "microsoft.exchange.webservices.nuspec"
       ]
     },
+    "Microsoft.Office.Interop.Excel/15.0.4795.1000": {
+      "sha512": "DfceS96ustwfL8EOJNNRtpk6b0RylhjNpgeeemuvi9X4GYks2UTeAimjSrdFEfuqRo5ibZ4Sd0gJIeDr9gMa6Q==",
+      "type": "package",
+      "path": "microsoft.office.interop.excel/15.0.4795.1000",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/Microsoft.Office.Interop.Excel.dll",
+        "microsoft.office.interop.excel.15.0.4795.1000.nupkg.sha512",
+        "microsoft.office.interop.excel.nuspec"
+      ]
+    },
     "Microsoft.Rest.ClientRuntime/2.3.20": {
       "sha512": "bw/H1nO4JdnhTagPHWIFQwtlQ6rb2jqw5RTrqPsPqzrjhJxc7P6MyNGdf4pgHQdzdpBSNOfZTEQifoUkxmzYXQ==",
       "type": "package",
@@ -1060,6 +1242,18 @@
         "lib/Microsoft.VisualStudio.OLE.Interop.xml",
         "microsoft.visualstudio.ole.interop.7.10.6071.nupkg.sha512",
         "microsoft.visualstudio.ole.interop.nuspec"
+      ]
+    },
+    "MicrosoftOfficeCore/15.0.0": {
+      "sha512": "/KgYw8uvv0Ut8FPvyEa1XJ/TrLSRgvTv3JgC2IT0/8NwoICzbEJWfmfwsE6Dwi8WH0jVkTEO7zRvGvaKqUOhqQ==",
+      "type": "package",
+      "path": "microsoftofficecore/15.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/Office.dll",
+        "microsoftofficecore.15.0.0.nupkg.sha512",
+        "microsoftofficecore.nuspec"
       ]
     },
     "Newtonsoft.Json/11.0.2": {
@@ -1139,6 +1333,45 @@
         "lib/netstandard2.0/ICSharpCode.SharpZipLib.xml",
         "sharpziplib.1.0.0.nupkg.sha512",
         "sharpziplib.nuspec"
+      ]
+    },
+    "SSH.NET/2016.1.0": {
+      "sha512": "b0fcFFOE044KNRhq1uGujmK04ab+OzA9xARdeVCoZrY6I4D1IIaR6dn6qBIa+er4bJapGBhznDitwcRQpSRC0w==",
+      "type": "package",
+      "path": "ssh.net/2016.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/Renci.SshNet.dll",
+        "lib/net35/Renci.SshNet.xml",
+        "lib/net40/Renci.SshNet.dll",
+        "lib/net40/Renci.SshNet.xml",
+        "lib/netstandard1.3/Renci.SshNet.dll",
+        "lib/netstandard1.3/Renci.SshNet.xml",
+        "lib/sl4/Renci.SshNet.dll",
+        "lib/sl4/Renci.SshNet.xml",
+        "lib/sl5/Renci.SshNet.dll",
+        "lib/sl5/Renci.SshNet.xml",
+        "lib/uap10/Renci.SshNet.dll",
+        "lib/uap10/Renci.SshNet.xml",
+        "lib/wp71/Renci.SshNet.dll",
+        "lib/wp71/Renci.SshNet.xml",
+        "lib/wp8/Renci.SshNet.dll",
+        "lib/wp8/Renci.SshNet.xml",
+        "ssh.net.2016.1.0.nupkg.sha512",
+        "ssh.net.nuspec"
+      ]
+    },
+    "System.Management.Automation/6.1.7601.17515": {
+      "sha512": "mOqRM+nD607Cw+2seNWfayjtsae41rcarVHgJ5aHIn2y2RF5N6z71bIOqrpITomKzi7R0msz5gUOco041+aDTw==",
+      "type": "package",
+      "path": "system.management.automation/6.1.7601.17515",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net40/System.Management.Automation.dll",
+        "lib/net45/System.Management.Automation.dll",
+        "system.management.automation.6.1.7601.17515.nupkg.sha512",
+        "system.management.automation.nuspec"
       ]
     },
     "System.ValueTuple/4.5.0": {
@@ -1289,6 +1522,20 @@
         "uipath.excel.activities.nuspec"
       ]
     },
+    "UiPath.FTP.Activities/1.0.7053.27728": {
+      "sha512": "+umQ9FJhH7P7+G7N3GNQCqAdDgjSwxWo6QzNQ5f8ItVTz8ldtfU/H+1sCXGWHN7JG9n7X6EK73ix2P9ZykYilg==",
+      "type": "package",
+      "path": "uipath.ftp.activities/1.0.7053.27728",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/UiPath.FTP.Activities.Design.dll",
+        "lib/net452/UiPath.FTP.Activities.dll",
+        "lib/net452/UiPath.FTP.dll",
+        "uipath.ftp.activities.1.0.7053.27728.nupkg.sha512",
+        "uipath.ftp.activities.nuspec"
+      ]
+    },
     "UiPath.Mail.Activities/1.7.2": {
       "sha512": "nmbFqLG4rHXAx/AKzXn55maa6ELzLNZTRXiV2kgHIP0fATtZd03yhyFp9qKziLjfRAOufxaZl4v3/WI8GHj6jg==",
       "type": "package",
@@ -1350,6 +1597,20 @@
         "lib/net45/UiPath.OCR.Contracts.dll",
         "uipath.ocr.contracts.2.2.1.nupkg.sha512",
         "uipath.ocr.contracts.nuspec"
+      ]
+    },
+    "UiPath.Script.Activities/1.0.6710.16240": {
+      "sha512": "7eOCdDvIUjI9Qf9tRp6hV2cLJpVJLv62rfrAFJ4o6mKgiMaySf763+dQduqMfMGTGxlhH8BoHwtnzLne1YgJBA==",
+      "type": "package",
+      "path": "uipath.script.activities/1.0.6710.16240",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net45/AutoHotkey.Interop.dll",
+        "lib/net45/UiPath.Script.Activities.Design.dll",
+        "lib/net45/UiPath.Script.Activities.dll",
+        "lib/net45/UiPath.Script.dll",
+        "uipath.script.activities.1.0.6710.16240.nupkg.sha512",
+        "uipath.script.activities.nuspec"
       ]
     },
     "UiPath.System.Activities/19.10.1": {
@@ -1619,16 +1880,33 @@
         "uipath.vision.1.8.1.nupkg.sha512",
         "uipath.vision.nuspec"
       ]
+    },
+    "UiPathTeam.Excel.Extensions.Activities/1.0.7107.42453": {
+      "sha512": "OAo8pQRq8FMxUFM43Bzv++RTm1IqcVNgjvHoeb9EzVKpUYem7WNxUv88tSZKrAc3Y1ukX/KbqEtdOaqXZVnaUQ==",
+      "type": "package",
+      "path": "uipathteam.excel.extensions.activities/1.0.7107.42453",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net451/Excel.Activites.Design.dll",
+        "lib/net451/Excel.Activities.dll",
+        "uipathteam.excel.extensions.activities.1.0.7107.42453.nupkg.sha512",
+        "uipathteam.excel.extensions.activities.nuspec"
+      ]
     }
   },
   "projectFileDependencyGroups": {
     "": [],
     ".NETFramework,Version=v4.6.1": [
       "BalaReva.DataTable.Activities >= 2.0.2 <= 2.0.2",
+      "BalaReva.Excel.Activities >= 2019.4.0 <= 2019.4.0",
+      "DataTablePlugins.Activities >= 1.1.5 <= 1.1.5",
       "UiPath.Excel.Activities >= 2.7.2 <= 2.7.2",
+      "UiPath.FTP.Activities >= 1.0.7053.27728 <= 1.0.7053.27728",
       "UiPath.Mail.Activities >= 1.7.2 <= 1.7.2",
+      "UiPath.Script.Activities >= 1.0.6710.16240 <= 1.0.6710.16240",
       "UiPath.System.Activities >= 19.10.1 <= 19.10.1",
-      "UiPath.UIAutomation.Activities >= 19.10.1 <= 19.10.1"
+      "UiPath.UIAutomation.Activities >= 19.10.1 <= 19.10.1",
+      "UiPathTeam.Excel.Extensions.Activities >= 1.0.7107.42453 <= 1.0.7107.42453"
     ]
   },
   "packageFolders": {
@@ -1650,15 +1928,35 @@
             "target": "Package",
             "version": "[2.0.2, 2.0.2]"
           },
+          "BalaReva.Excel.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[2019.4.0, 2019.4.0]"
+          },
+          "DataTablePlugins.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.1.5, 1.1.5]"
+          },
           "UiPath.Excel.Activities": {
             "include": "Runtime",
             "target": "Package",
             "version": "[2.7.2, 2.7.2]"
           },
+          "UiPath.FTP.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.0.7053.27728, 1.0.7053.27728]"
+          },
           "UiPath.Mail.Activities": {
             "include": "Runtime",
             "target": "Package",
             "version": "[1.7.2, 1.7.2]"
+          },
+          "UiPath.Script.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.0.6710.16240, 1.0.6710.16240]"
           },
           "UiPath.System.Activities": {
             "include": "Runtime",
@@ -1669,6 +1967,11 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[19.10.1, 19.10.1]"
+          },
+          "UiPathTeam.Excel.Extensions.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[1.0.7107.42453, 1.0.7107.42453]"
           }
         }
       }

@@ -2,6 +2,30 @@
   "Packages": [
     {
       "Package": {
+        "Id": "BalaReva.DataTable.Activities",
+        "Version": "2.0.2"
+      },
+      "Assemblies": [
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\balareva.datatable.activities/2.0.2\\lib/DataTableExtensions.Activities.dll",
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\balareva.datatable.activities/2.0.2\\lib/DataTableGroup.Design.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "BalaReva.Excel.Activities",
+        "Version": "2019.4.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\balareva.excel.activities/2019.4.0\\lib/BalaReva.Excel.Base.dll",
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\balareva.excel.activities/2019.4.0\\lib/BalaReva.Excel.Design.dll",
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\balareva.excel.activities/2019.4.0\\lib/BalaReva.Excel.dll",
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\balareva.excel.activities/2019.4.0\\lib/BalaReva.Utilities.dll",
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\microsoft.office.interop.excel/15.0.4795.1000\\lib/net20/Microsoft.Office.Interop.Excel.dll",
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\microsoftofficecore/15.0.0\\lib/net35/Office.dll"
+      ]
+    },
+    {
+      "Package": {
         "Id": "UiPath.Excel.Activities",
         "Version": "2.7.2"
       },
@@ -22,6 +46,19 @@
     },
     {
       "Package": {
+        "Id": "UiPath.FTP.Activities",
+        "Version": "1.0.7053.27728"
+      },
+      "Assemblies": [
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\fluentftp/19.1.2\\lib/net45/FluentFTP.dll",
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\ssh.net/2016.1.0\\lib/net40/Renci.SshNet.dll",
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\uipath.ftp.activities/1.0.7053.27728\\lib/net452/UiPath.FTP.Activities.Design.dll",
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\uipath.ftp.activities/1.0.7053.27728\\lib/net452/UiPath.FTP.Activities.dll",
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\uipath.ftp.activities/1.0.7053.27728\\lib/net452/UiPath.FTP.dll"
+      ]
+    },
+    {
+      "Package": {
         "Id": "UiPath.Mail.Activities",
         "Version": "1.7.2"
       },
@@ -36,6 +73,19 @@
         "C:\\Users\\Manoj_Jha\\.nuget\\packages\\uipath.mail.activities/1.7.2\\lib/net461/UiPath.Mail.Activities.Design.dll",
         "C:\\Users\\Manoj_Jha\\.nuget\\packages\\uipath.mail.activities/1.7.2\\lib/net461/UiPath.Mail.Activities.dll",
         "C:\\Users\\Manoj_Jha\\.nuget\\packages\\uipath.mail.activities/1.7.2\\lib/net461/UiPath.Mail.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.Script.Activities",
+        "Version": "1.0.6710.16240"
+      },
+      "Assemblies": [
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\system.management.automation/6.1.7601.17515\\lib/net45/System.Management.Automation.dll",
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\uipath.script.activities/1.0.6710.16240\\lib/net45/AutoHotkey.Interop.dll",
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\uipath.script.activities/1.0.6710.16240\\lib/net45/UiPath.Script.Activities.Design.dll",
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\uipath.script.activities/1.0.6710.16240\\lib/net45/UiPath.Script.Activities.dll",
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\uipath.script.activities/1.0.6710.16240\\lib/net45/UiPath.Script.dll"
       ]
     },
     {
@@ -111,12 +161,21 @@
     },
     {
       "Package": {
-        "Id": "BalaReva.DataTable.Activities",
-        "Version": "2.0.2"
+        "Id": "UiPathTeam.Excel.Extensions.Activities",
+        "Version": "1.0.7107.42453"
       },
       "Assemblies": [
-        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\balareva.datatable.activities/2.0.2\\lib/DataTableExtensions.Activities.dll",
-        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\balareva.datatable.activities/2.0.2\\lib/DataTableGroup.Design.dll"
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\uipathteam.excel.extensions.activities/1.0.7107.42453\\lib/net451/Excel.Activites.Design.dll",
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\uipathteam.excel.extensions.activities/1.0.7107.42453\\lib/net451/Excel.Activities.dll"
+      ]
+    },
+    {
+      "Package": {
+        "Id": "DataTablePlugins.Activities",
+        "Version": "1.1.5"
+      },
+      "Assemblies": [
+        "C:\\Users\\Manoj_Jha\\.nuget\\packages\\datatableplugins.activities/1.1.5\\lib/net461/DataTablePlugins.dll"
       ]
     }
   ],
@@ -131,6 +190,20 @@
       "Id": "BalaReva.DataTable.Activities",
       "Version": "2.0.2",
       "Dependencies": []
+    },
+    "BalaReva.Excel.Activities": {
+      "Id": "BalaReva.Excel.Activities",
+      "Version": "2019.4.0",
+      "Dependencies": [
+        {
+          "Item1": "Microsoft.Office.Interop.Excel",
+          "Item2": "[15.0.4795.1000, )"
+        },
+        {
+          "Item1": "MicrosoftOfficeCore",
+          "Item2": "[15.0.0, )"
+        }
+      ]
     },
     "BouncyCastle": {
       "Id": "BouncyCastle",
@@ -152,6 +225,11 @@
       "Version": "2.13.5",
       "Dependencies": []
     },
+    "DataTablePlugins.Activities": {
+      "Id": "DataTablePlugins.Activities",
+      "Version": "1.1.5",
+      "Dependencies": []
+    },
     "DocumentFormat.OpenXml": {
       "Id": "DocumentFormat.OpenXml",
       "Version": "2.5.0",
@@ -160,6 +238,11 @@
     "Extended.Wpf.Toolkit": {
       "Id": "Extended.Wpf.Toolkit",
       "Version": "2.8.0",
+      "Dependencies": []
+    },
+    "FluentFTP": {
+      "Id": "FluentFTP",
+      "Version": "19.1.2",
       "Dependencies": []
     },
     "Humanizer.Core": {
@@ -187,6 +270,11 @@
       "Version": "2.2.0",
       "Dependencies": []
     },
+    "Microsoft.Office.Interop.Excel": {
+      "Id": "Microsoft.Office.Interop.Excel",
+      "Version": "15.0.4795.1000",
+      "Dependencies": []
+    },
     "Microsoft.Rest.ClientRuntime": {
       "Id": "Microsoft.Rest.ClientRuntime",
       "Version": "2.3.20",
@@ -200,6 +288,11 @@
     "Microsoft.VisualStudio.OLE.Interop": {
       "Id": "Microsoft.VisualStudio.OLE.Interop",
       "Version": "7.10.6071",
+      "Dependencies": []
+    },
+    "MicrosoftOfficeCore": {
+      "Id": "MicrosoftOfficeCore",
+      "Version": "15.0.0",
       "Dependencies": []
     },
     "Newtonsoft.Json": {
@@ -220,6 +313,16 @@
     "SharpZipLib": {
       "Id": "SharpZipLib",
       "Version": "1.0.0",
+      "Dependencies": []
+    },
+    "SSH.NET": {
+      "Id": "SSH.NET",
+      "Version": "2016.1.0",
+      "Dependencies": []
+    },
+    "System.Management.Automation": {
+      "Id": "System.Management.Automation",
+      "Version": "6.1.7601.17515",
       "Dependencies": []
     },
     "System.ValueTuple": {
@@ -262,6 +365,20 @@
         }
       ]
     },
+    "UiPath.FTP.Activities": {
+      "Id": "UiPath.FTP.Activities",
+      "Version": "1.0.7053.27728",
+      "Dependencies": [
+        {
+          "Item1": "FluentFTP",
+          "Item2": "[19.1.2, )"
+        },
+        {
+          "Item1": "SSH.NET",
+          "Item2": "[2016.1.0, )"
+        }
+      ]
+    },
     "UiPath.Mail.Activities": {
       "Id": "UiPath.Mail.Activities",
       "Version": "1.7.2",
@@ -288,6 +405,16 @@
       "Id": "UiPath.OCR.Contracts",
       "Version": "2.2.1",
       "Dependencies": []
+    },
+    "UiPath.Script.Activities": {
+      "Id": "UiPath.Script.Activities",
+      "Version": "1.0.6710.16240",
+      "Dependencies": [
+        {
+          "Item1": "System.Management.Automation",
+          "Item2": "[6.1.7601.17515, )"
+        }
+      ]
     },
     "UiPath.System.Activities": {
       "Id": "UiPath.System.Activities",
@@ -354,6 +481,11 @@
           "Item2": "[2.2.1, )"
         }
       ]
+    },
+    "UiPathTeam.Excel.Extensions.Activities": {
+      "Id": "UiPathTeam.Excel.Extensions.Activities",
+      "Version": "1.0.7107.42453",
+      "Dependencies": []
     }
   }
 }
